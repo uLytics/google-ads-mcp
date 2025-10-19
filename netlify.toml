@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+
+[functions]
+  node_bundler = "esbuild"
+  included_files = ["dist/**", "netlify/functions/**", "src/**"]
+
+[build.environment]
+  NODE_VERSION = "20"
